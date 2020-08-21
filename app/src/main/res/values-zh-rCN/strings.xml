@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UDPMote</string>
+    <string name="about">关于</string>
+    <string name="about_content">"UDPMote (fork 自 Dolphindroid)
+Copyright © 2017, Anthony Calosa
+Copyright © 2020, Eric Zhang (EZForever)
+
+与支持 UDPWii 的修改版 Dolphin/Ishiiruka 模拟器配合使用。
+与 UDPWiiHook 配合使用时，支持动感强化器模拟。
+
+相关链接：
+ "<a href="https://github.com/kevlahnota/dolphin/releases">修改版 Dolphin 5.0-4484</a>"
+ "<a href="https://github.com/kevlahnota/Ishiiruka/releases">修改版 Ishiiruka 953</a>"
+ "<a href="https://dolphin-emu.org/download/list/wiispeak/1/">Wiispeak 官方分支（老版本）</a></string>
+    <string name="connect">连接</string>
+    <string name="custom">自定义</string>
+    <string name="custom_connection">自定义连接</string>
+    <string name="presses_to_go">" 次返回后断开连接"</string>
+    <string name="resolv_failed">主机名解析失败</string>
+    <string name="server_address">主机地址</string>
+    <string name="server_port">主机端口</string>
+    <string name="socket_failed">创建socket失败</string>
+    <string name="jdance_fix">《舞力全开》兼容模式</string>
+    <string name="amt">"【 体感灵敏度 】 "</string>
+    <string name="gyro_dialog">陀螺仪配置</string>
+    <string name="gyro_dialog_content">请选择一个陀螺仪或模拟方案。</string>
+    <string name="vgyro_impl_selector_title">选择陀螺仪方案</string>
+    <string name="vgyro_impl_selector_btn_reset">重置</string>
+</resources>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.gesture.GestureOverlayView android:id="@+id/agesture_ir" android:layout_width="match_parent" android:layout_height="match_parent" android:rotation="90"/>
+
+    <!--TableLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TableRow android:gravity="right|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <ToggleButton
+                android:id="@+id/tbSwitch"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:checked="false"
+                android:rotation="90"
+                android:textOff="@string/tb4way"
+                android:textOn="@string/tb8way"
+                android:textSize="12sp" />
+        </TableRow>
+        <TableRow>
+            <Button android:visibility="invisible" android:layout_height="10dp"/>
+        </TableRow>
+        <TableRow android:gravity="right|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/abutton_middle"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/ssw"
+                android:scaleType="fitCenter" />
+        </TableRow>
+        <TableRow>
+            <Button android:visibility="gone" android:layout_height="5dp"/>
+        </TableRow>
+        <TableRow android:gravity="right|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <ToggleButton
+                android:id="@+id/tbSwitch2"
+                style="android:buttonStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:checked="false"
+                android:rotation="90"
+                android:textOff="@string/M1"
+                android:textOn="@string/M2"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </TableRow>
+    </TableLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|right"
+        android:orientation="vertical">
+
+        <ToggleButton
+            android:id="@+id/tbSwitch"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:checked="false"
+            android:rotation="90"
+            android:textOff="@string/tb8way"
+            android:textOn="@string/tb4way"
+            android:textSize="10sp" />
+
+        <ImageButton
+            android:id="@+id/abutton_middle"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/ssw"
+            android:scaleType="fitCenter" />
+
+        <ToggleButton
+            android:id="@+id/tbSwitch2"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:checked="false"
+            android:rotation="90"
+            android:textOff="@string/m1"
+            android:textOn="@string/m2"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    <TableLayout android:visibility="invisible" android:layout_width="match_parent" android:layout_height="0dp">
+        <TableRow android:layout_width="match_parent">
+            <ImageButton android:id="@+id/abutton_down" android:visibility="invisible" android:layout_width="0dp" android:layout_height="1dp" android:drawableLeft="@drawable/dd" android:layout_weight="1" style="@style/Widget.AppCompat.Button.Borderless"/>
+            <ImageButton android:id="@+id/abutton_right" android:visibility="invisible" android:layout_height="1dp" android:drawableLeft="@drawable/rr" android:layout_weight="1" style="@style/Widget.AppCompat.Button.Borderless"/>
+            <ImageButton android:id="@+id/abutton_left" android:visibility="invisible" android:layout_height="1dp" android:drawableLeft="@drawable/ll" android:layout_weight="1" style="@style/Widget.AppCompat.Button.Borderless"/>
+            <ImageButton android:id="@+id/abutton_up" android:visibility="invisible" android:layout_width="0dp" android:layout_height="1dp" android:drawableLeft="@drawable/uu" android:layout_weight="1" style="@style/Widget.AppCompat.Button.Borderless"/>
+        </TableRow>
+    </TableLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtAngle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtAngle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtOffset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtOffset2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtHold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtOffset"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtHold2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtOffset"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="invisible" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TableLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <GridLayout android:rowCount="5" android:columnCount="5">
+
+                    <ImageButton
+                        android:id="@+id/abutton_home"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_row="2"
+                        android:layout_column="0"
+                        android:background="@drawable/bg_altbase"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/hh" />
+
+                    <ImageButton
+                        android:id="@+id/abutton_plus"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_row="4"
+                        android:layout_column="0"
+                        android:background="@drawable/bg_base"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pp" />
+
+                    <ImageButton
+                        android:id="@+id/abutton_minus"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:background="@drawable/bg_base"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/mm" />
+
+                </GridLayout>
+            </TableRow>
+        </TableLayout>
+        <TableLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TableRow android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+                <GridLayout android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rowCount="3" android:columnCount="3">
+                    <com.jmedeisis.bugstick.Joystick android:layout_gravity="center_horizontal" android:id="@+id/joystickRight" android:background="@drawable/bg_base" android:visibility="gone" android:layout_width="190dp" android:layout_height="190dp" android:layout_column="0" android:layout_row="0" android:layout_rowSpan="3" android:layout_columnSpan="3">
+                        <ImageButton android:background="@drawable/bg_stick" android:layout_width="70dp" android:layout_height="70dp"/>
+                    </com.jmedeisis.bugstick.Joystick>
+                    <ImageButton
+                        android:id="@+id/abutton_2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:background="@drawable/bg_base"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/n22" />
+
+                    <ImageButton
+                        android:id="@+id/abutton_b"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:background="@drawable/bg_base"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bb" />
+
+                    <ImageButton
+                        android:id="@+id/abutton_1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:background="@drawable/bg_base"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/n11" />
+
+                    <ImageButton
+                        android:id="@+id/abutton_a"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_row="2"
+                        android:layout_column="1"
+                        android:background="@drawable/bg_base"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/aa" />
+                </GridLayout>
+            </TableRow>
+        </TableLayout>
+        <com.jmedeisis.bugstick.Joystick android:layout_gravity="center_horizontal" android:id="@+id/joystickLeft" android:background="@drawable/bg_base" android:layout_width="190dp" android:layout_height="190dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+            <ImageButton android:background="@drawable/bg_stick" android:layout_width="80dp" android:layout_height="80dp"/>
+        </com.jmedeisis.bugstick.Joystick>
+    </FrameLayout>
+</RelativeLayout>

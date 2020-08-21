@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "net.ezforever.udpmote"
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 10101
+        versionName "1.1.1"
+    }
+
+    buildTypes {
+        release {
+            // This enables code optimization... I guess?
+            minifyEnabled true // false
+            shrinkResources true
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        // Compile with Java 8 language support...
+        sourceCompatibility JavaVersion.VERSION_1_8
+        // ... and generate Java 8 class files.
+        // NOTE: This does not affect app compatibility, since class files are converted into DEXes.
+        //       However, set this to a value < sourceCompatibility will cause javac to fail.
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    implementation 'com.jmedeisis:bugstick:0.2.2'
+}
