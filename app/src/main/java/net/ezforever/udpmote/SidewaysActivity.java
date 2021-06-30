@@ -124,7 +124,7 @@ public class SidewaysActivity extends AppCompatActivity implements SensorEventLi
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sideways);
-        this.backToast = Toast.makeText(getApplicationContext(), (CharSequence) null, Toast.LENGTH_SHORT);
+        this.backToast = Toast.makeText(getApplicationContext(), null, Toast.LENGTH_SHORT);
         this.wl = ((PowerManager) getSystemService(Context.POWER_SERVICE)).newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, "UDPMote:sideways");
         this.irClickTimer = new Timer();
 
@@ -190,23 +190,23 @@ public class SidewaysActivity extends AppCompatActivity implements SensorEventLi
         this.maskMap.put(R.id.abutton_down, 256);
         this.maskMap.put(R.id.abutton_left, 512);
         this.maskMap.put(R.id.abutton_right, 1024);
-        this.txtAngle = (TextView) findViewById(R.id.txtAngle);
-        this.txtOffset = (TextView) findViewById(R.id.txtOffset);
-        this.txtHold = (TextView) findViewById(R.id.txtHold);
-        this.txtAngle2 = (TextView) findViewById(R.id.txtAngle2);
-        this.txtOffset2 = (TextView) findViewById(R.id.txtOffset2);
-        this.txtHold2 = (TextView) findViewById(R.id.txtHold2);
-        this.txtValue = (TextView) findViewById(R.id.txtValue);
-        this.joystickLeft = (Joystick) findViewById(R.id.joystickLeft);
-        this.joystickRight = (Joystick) findViewById(R.id.joystickRight);
-        ((ToggleButton) findViewById(R.id.tbSwitch2)).setOnClickListener((View.OnClickListener) v -> {
+        this.txtAngle = findViewById(R.id.txtAngle);
+        this.txtOffset = findViewById(R.id.txtOffset);
+        this.txtHold = findViewById(R.id.txtHold);
+        this.txtAngle2 = findViewById(R.id.txtAngle2);
+        this.txtOffset2 = findViewById(R.id.txtOffset2);
+        this.txtHold2 = findViewById(R.id.txtHold2);
+        this.txtValue = findViewById(R.id.txtValue);
+        this.joystickLeft = findViewById(R.id.joystickLeft);
+        this.joystickRight = findViewById(R.id.joystickRight);
+        findViewById(R.id.tbSwitch2).setOnClickListener(v -> {
             SidewaysActivity.this.checkMode();
         });
-        ((ImageButton) findViewById(R.id.abutton_middle)).setOnClickListener((View.OnClickListener) v -> {
+        findViewById(R.id.abutton_middle).setOnClickListener(v -> {
             SidewaysActivity.this.Mode1();
         });
         for (Map.Entry<Integer, Integer> entry : this.maskMap.entrySet()) {
-            ((ImageButton) findViewById(entry.getKey().intValue())).setOnTouchListener((View.OnTouchListener) (v, event) -> {
+            findViewById(entry.getKey()).setOnTouchListener((v, event) -> {
                 int action = event.getAction();
                 if (action == MotionEvent.ACTION_DOWN || action == MotionEvent.ACTION_UP) {
                     SidewaysActivity.this.buttonMask.xor(SidewaysActivity.this.maskMap.get(v.getId()));

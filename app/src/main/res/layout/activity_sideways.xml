@@ -83,12 +83,20 @@
             android:visibility="gone" />
 
     </LinearLayout>
-    <TableLayout android:visibility="invisible" android:layout_width="match_parent" android:layout_height="0dp">
+    <TableLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp">
         <TableRow android:layout_width="match_parent">
-            <ImageButton android:id="@+id/abutton_down" android:visibility="invisible" android:layout_width="0dp" android:layout_height="1dp" android:drawableLeft="@drawable/dd" android:layout_weight="1" style="@style/Widget.AppCompat.Button.Borderless"/>
-            <ImageButton android:id="@+id/abutton_right" android:visibility="invisible" android:layout_height="1dp" android:drawableLeft="@drawable/rr" android:layout_weight="1" style="@style/Widget.AppCompat.Button.Borderless"/>
-            <ImageButton android:id="@+id/abutton_left" android:visibility="invisible" android:layout_height="1dp" android:drawableLeft="@drawable/ll" android:layout_weight="1" style="@style/Widget.AppCompat.Button.Borderless"/>
-            <ImageButton android:id="@+id/abutton_up" android:visibility="invisible" android:layout_width="0dp" android:layout_height="1dp" android:drawableLeft="@drawable/uu" android:layout_weight="1" style="@style/Widget.AppCompat.Button.Borderless"/>
+            <ImageButton android:id="@+id/abutton_down" android:visibility="invisible" android:layout_width="0dp"
+                         android:layout_height="1dp" android:drawableLeft="@drawable/dd" android:layout_weight="1"
+                         style="@style/Widget.AppCompat.Button.Borderless"/>
+            <ImageButton android:id="@+id/abutton_right" android:visibility="invisible" android:layout_height="1dp"
+                         android:drawableLeft="@drawable/rr" android:layout_weight="1"
+                         style="@style/Widget.AppCompat.Button.Borderless"/>
+            <ImageButton android:id="@+id/abutton_left" android:visibility="invisible" android:layout_height="1dp"
+                         android:drawableLeft="@drawable/ll" android:layout_weight="1"
+                         style="@style/Widget.AppCompat.Button.Borderless"/>
+            <ImageButton android:id="@+id/abutton_up" android:visibility="invisible" android:layout_width="0dp"
+                         android:layout_height="1dp" android:drawableLeft="@drawable/uu" android:layout_weight="1"
+                         style="@style/Widget.AppCompat.Button.Borderless"/>
         </TableRow>
     </TableLayout>
 

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="M1">M1</string>
-    <string name="M2">M2</string>
     <string name="a">A</string>
     <string name="about">About</string>
     <string name="about_content">"UDPMote (fork of Dolphindroid)
