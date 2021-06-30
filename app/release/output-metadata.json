@@ -1,19 +1,17 @@
 {
-  "version": 1,
+  "version": 2,
   "artifactType": {
     "type": "APK",
     "kind": "Directory"
   },
   "applicationId": "net.ezforever.udpmote",
-  "variantName": "release",
+  "variantName": "processReleaseResources",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
-      "properties": [],
-      "versionCode": 10101,
-      "versionName": "1.1.1",
-      "enabled": true,
+      "versionCode": 10102,
+      "versionName": "1.1.2",
       "outputFile": "app-release.apk"
     }
   ]
