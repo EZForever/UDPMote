@@ -39,6 +39,7 @@ Links:
     <string name="right">Right</string>
     <string name="server_address">Server Address</string>
     <string name="server_port">Server Port</string>
+    <string name="sk">SK</string>
     <string name="socket_failed">Failed to open socket</string>
     <string name="tb4way">4W</string>
     <string name="tb8way">8W</string>

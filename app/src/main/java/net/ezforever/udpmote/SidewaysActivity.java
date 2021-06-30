@@ -190,6 +190,7 @@ public class SidewaysActivity extends AppCompatActivity implements SensorEventLi
         this.maskMap.put(R.id.abutton_down, 256);
         this.maskMap.put(R.id.abutton_left, 512);
         this.maskMap.put(R.id.abutton_right, 1024);
+        this.maskMap.put(R.id.abutton_sk, 2048);
         this.txtAngle = findViewById(R.id.txtAngle);
         this.txtOffset = findViewById(R.id.txtOffset);
         this.txtHold = findViewById(R.id.txtHold);

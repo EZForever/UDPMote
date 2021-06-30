@@ -82,6 +82,14 @@
             android:textSize="10sp"
             android:visibility="gone" />
 
+        <Button
+            android:id="@+id/abutton_sk"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:rotation="90"
+            android:text="@string/sk"
+            android:textSize="10sp" />
+
     </LinearLayout>
     <TableLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp">
         <TableRow android:layout_width="match_parent">
