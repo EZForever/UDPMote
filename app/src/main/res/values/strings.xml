@@ -6,10 +6,10 @@
     <string name="about">About</string>
     <string name="about_content">"UDPMote (fork of Dolphindroid)
 Copyright © 2017, Anthony Calosa
-Copyright © 2020, Eric Zhang (EZForever)
+Copyright © 2020-2021, Eric Zhang (EZForever)
 
 For use with Custom Dolphin/Ishiiruka Emulator with UDPWii support.
-Use with UDPWiiHook to enable support for MotionPlus emulation.
+Use with <a href="https://github.com/EZForever/UDPWiiHook/releases">UDPWiiHook</a> to enable support for MotionPlus emulation.
 
 Links:
  "<a href="https://github.com/kevlahnota/dolphin/releases">Custom Dolphin 5.0-4484</a>"
